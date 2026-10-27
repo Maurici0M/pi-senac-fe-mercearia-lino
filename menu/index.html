@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Nome da pagina -->
+    <title>Mercearia Lino</title>
+
+    <!-- Links de estilizacao -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- Links de script -->
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <!-- Script do Iconify Web Component -->
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!--Componente de Acessibilidade VLibras-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <!--Componente de Acessibilidade VLibras-->
+
+    <aside class="sidebar">
+      <!-- Sidebar header -->
+      <header class="sidebar-header">
+        <!-- <img src="/img/logo_default.svg" alt="" class="header-logo" /> -->
+
+        <div class="container-logo">
+          <iconify-icon icon="at-icons:shopping-cart"></iconify-icon>
+          <span>Mercearia Lino</span>
+        </div>
+
+        <button class="sidebar-toggle">
+          <span class="material-symbols-rounded"> chevron_left </span>
+        </button>
+      </header>
+
+      <div class="sidebar-content">
+        <!-- Search Form -->
+        <!-- <form action="#" class="search-form">
+          <span class="material-symbols-rounded"> search </span>
+          <input type="search" placeholder="Pesquisar..." required />
+        </form> -->
+
+        <!-- Menu List -->
+
+        <ul class="menu-list">
+          <!-- Código injetado via JavaScript -->
+        </ul>
+      </div>
+
+      <!-- Sidebar Footer -->
+      <div class="sidebar-footer">
+        <button class="theme-toggle">
+          <div class="theme-label">
+            <span class="material-symbols-rounded"> dark_mode </span>
+            <span class="theme-dark"> Modo Escuro </span>
+          </div>
+
+          <div class="theme-toggle-track">
+            <div class="theme-toggle-indicator"></div>
+          </div>
+        </button>
+      </div>
+    </aside>
+
+    <section class="aplication">
+      <div class="contaier-content">
+        <h1>Olá, José!</h1>
+
+        <a href="#" class="container-seller">
+          <div class="container-seller content">
+            <span>
+              <iconify-icon icon="eva:shopping-cart-fill"></iconify-icon> Nova
+              Venda
+            </span>
+            <p>Registrar uma nova venda</p>
+          </div>
+        </a>
+
+        <hr />
+
+        <h3>Resumo de Hoje</h3>
+
+        <div class="container-information">
+          <a class="container-seller">
+            <div class="container-seller content">
+              <span>
+                <iconify-icon icon="andrsrxn:calendar-clock"></iconify-icon>
+                Faturamento
+              </span>
+
+              <p>R$ 150,00</p>
+            </div>
+          </a>
+
+          <a class="container-seller">
+            <div class="container-seller content">
+              <span>
+                <iconify-icon icon="dashicons:products"></iconify-icon> Produtos
+                em Estoque
+              </span>
+
+              <p>15</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Versão atual</h4>
+              <ul>
+                <li (click)="openModal('250ms', '150ms')">
+                  <a rel="noopener noreferrer" style="cursor: pointer"
+                    >1.0 Estável</a
+                  >
+                </li>
+                <!-- <li>
+                  <a href="#" rel="noopener noreferrer">Última atualizaçã em 26/10/2026 ás 22:39</a>
+                </li>  -->
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Developer</h4>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >Documentação</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Veja também</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://carrossel-de-musicas.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Carrossel de Músicas 1.0</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://grid-da-noticia.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Grid da Notícia</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Nos Siga!</h4>
+              <ul>
+                <li>
+                  <span> Cyntia Garçete </span>
+
+                  <div class="social-icons">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <iconify-icon
+                        icon="akar-icons:github-fill"
+                      ></iconify-icon>
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/in/cyntialino/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <iconify-icon
+                        icon="akar-icons:linkedin-fill"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <span>Izabela Almeida</span>
+
+                  <div class="social-icons">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <iconify-icon
+                        icon="akar-icons:github-fill"
+                      ></iconify-icon>
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/in/izabelasousa-almeida/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <iconify-icon
+                        icon="akar-icons:linkedin-fill"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <span>Mauricio Marques</span>
+
+                  <div class="social-icons">
+                    <a
+                      href="https://github.com/Maurici0M"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <iconify-icon
+                        icon="akar-icons:github-fill"
+                      ></iconify-icon>
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/in/mauricio-marques-costa-994b25210/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <iconify-icon
+                        icon="akar-icons:linkedin-fill"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="copyright">
+            
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
