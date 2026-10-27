@@ -221,10 +221,10 @@ body {
         align-items: center;
 
         color: var(--color-text-primary);
-        background: var(--color-bg-secondary);
+        background: var(--color-bg-tertiary);
 
         &:hover {
-          background: var(--color-hover-secondary);
+          background: black;
         }
 
         .theme-label {
@@ -297,6 +297,21 @@ body {
       .sidebar-content {
         .menu-link {
           .menu-label {
+            opacity: 0;
+          }
+        }
+      }
+
+      .sidebar-footer {
+        .theme-toggle {
+          .theme-label {
+            .theme-dark {
+              transition: all ease-in-out 0.5s;
+              opacity: 0;
+            }
+          }
+
+          .theme-toggle-track {
             opacity: 0;
           }
         }
